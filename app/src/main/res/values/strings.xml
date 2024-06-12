@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Task4</string>
+    <string name="mark_attendance">Mark\nAttendance</string>
+    <string name="show_attendance">Show\nAttendance</string>
+    <string name="home_work">Home\nWork</string>
+    <string name="gallery">Gallery</string>
+    <string name="notice">Notice</string>
+    <string name="pay_fees">Pay Fee</string>
+    <string name="about">About</string>
+</resources>

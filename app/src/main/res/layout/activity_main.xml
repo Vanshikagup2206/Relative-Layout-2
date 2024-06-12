@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_20"
+    tools:context=".MainActivity">
+    <View
+        android:id="@+id/bgView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_300"
+        android:background="@color/blue" />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/bgView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-350dp"
+        android:src="@drawable/school" />
+    <TextView
+        android:id="@+id/tvMarkAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bgView"
+        android:layout_marginTop="-50dp"
+        android:background="@color/orange"
+        android:paddingHorizontal="@dimen/dp_5"
+        android:paddingVertical="@dimen/dp_60"
+        android:text="@string/mark_attendance"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="@dimen/sp_20" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMarkAttendance"
+        android:layout_marginBottom="-20dp"
+        android:layout_alignTop="@+id/tvShowAttendance"
+        android:src="@drawable/baseline_calendar_month_24" />
+    <TextView
+        android:id="@+id/tvShowAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bgView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-50dp"
+        android:background="@color/pink"
+        android:paddingHorizontal="@dimen/dp_5"
+        android:paddingVertical="@dimen/dp_60"
+        android:text="@string/show_attendance"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="@dimen/sp_20" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvMarkAttendance"
+        android:src="@drawable/baseline_grading_24"
+        android:layout_alignTop="@+id/tvShowAttendance"
+        />
+    <TextView
+        android:id="@+id/tvHomeWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvShowAttendance"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_toEndOf="@+id/tvShowAttendance"
+        android:background="@color/light_blue"
+        android:paddingHorizontal="@dimen/dp_5"
+        android:paddingVertical="@dimen/dp_60"
+        android:text="@string/home_work"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvShowAttendance"
+        android:layout_alignTop="@id/tvHomeWork"
+        android:src="@drawable/baseline_menu_book_24"
+        />
+    <TextView
+        android:id="@+id/tvGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMarkAttendance"
+        android:background="@color/light_pink"
+        android:text="@string/gallery"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingHorizontal="@dimen/dp_55"
+        android:paddingVertical="@dimen/dp_20"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/sp_20" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvGallery"
+        android:layout_marginStart="-50dp"
+        android:layout_toEndOf="@+id/tvGallery"
+        android:src="@drawable/baseline_photo_album_24" />
+    <TextView
+        android:id="@+id/tvNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShowAttendance"
+        android:layout_toEndOf="@+id/tvGallery"
+        android:background="@color/light_green"
+        android:text="@string/notice"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingHorizontal="@dimen/dp_50"
+        android:paddingVertical="@dimen/dp_20"
+        android:textColor="@color/green"
+        android:textSize="@dimen/sp_20" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvNotice"
+        android:layout_marginStart="-50dp"
+        android:layout_toEndOf="@+id/tvNotice"
+        android:src="@drawable/baseline_message_24" />
+    <TextView
+        android:id="@+id/tvPayFees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGallery"
+        android:background="@color/lighter_blue"
+        android:text="@string/pay_fees"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingHorizontal="@dimen/dp_50"
+        android:paddingVertical="@dimen/dp_20"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp_20" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvPayFees"
+        android:layout_marginStart="-50dp"
+        android:layout_toEndOf="@+id/tvPayFees"
+        android:src="@drawable/baseline_attach_money_24" />
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvPayFees"
+        android:layout_below="@+id/tvNotice"
+        android:background="@color/light_orange"
+        android:text="@string/about"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingHorizontal="@dimen/dp_50"
+        android:paddingVertical="@dimen/dp_20"
+        android:textColor="@color/orange"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textSize="@dimen/sp_20" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvAbout"
+        android:layout_marginStart="-50dp"
+        android:layout_toEndOf="@+id/tvAbout"
+        android:src="@drawable/baseline_help_24" />
+</RelativeLayout>

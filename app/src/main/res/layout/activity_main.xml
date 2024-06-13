@@ -19,6 +19,7 @@
         android:layout_marginTop="-350dp"
         android:src="@drawable/school" />
     <TextView
+        android:drawableTop="@drawable/baseline_calendar_month_24"
         android:id="@+id/tvMarkAttendance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,18 +27,12 @@
         android:layout_marginTop="-50dp"
         android:background="@color/orange"
         android:paddingHorizontal="@dimen/dp_5"
-        android:paddingVertical="@dimen/dp_60"
+        android:paddingVertical="@dimen/dp_50"
         android:text="@string/mark_attendance"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:textSize="@dimen/sp_20" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tvMarkAttendance"
-        android:layout_marginBottom="-20dp"
-        android:layout_alignTop="@+id/tvShowAttendance"
-        android:src="@drawable/baseline_calendar_month_24" />
+
     <TextView
         android:id="@+id/tvShowAttendance"
         android:layout_width="wrap_content"
@@ -46,20 +41,16 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="-50dp"
         android:background="@color/pink"
+        android:drawableTop="@drawable/baseline_grading_24"
         android:paddingHorizontal="@dimen/dp_5"
-        android:paddingVertical="@dimen/dp_60"
+        android:paddingVertical="@dimen/dp_50"
         android:text="@string/show_attendance"
-        android:textColor="@color/white"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="@dimen/sp_20" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/tvMarkAttendance"
-        android:src="@drawable/baseline_grading_24"
-        android:layout_alignTop="@+id/tvShowAttendance"
-        />
+
     <TextView
+        android:drawableTop="@drawable/baseline_menu_book_24"
         android:id="@+id/tvHomeWork"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,40 +60,28 @@
         android:layout_toEndOf="@+id/tvShowAttendance"
         android:background="@color/light_blue"
         android:paddingHorizontal="@dimen/dp_5"
-        android:paddingVertical="@dimen/dp_60"
+        android:paddingVertical="@dimen/dp_50"
         android:text="@string/home_work"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="@dimen/sp_20" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/tvShowAttendance"
-        android:layout_alignTop="@id/tvHomeWork"
-        android:src="@drawable/baseline_menu_book_24"
-        />
     <TextView
         android:id="@+id/tvGallery"
+        android:drawableRight="@drawable/baseline_photo_album_24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvMarkAttendance"
         android:background="@color/light_pink"
         android:text="@string/gallery"
         android:layout_marginTop="@dimen/dp_20"
-        android:paddingHorizontal="@dimen/dp_55"
-        android:paddingVertical="@dimen/dp_20"
+        android:paddingHorizontal="@dimen/dp_30"
+        android:paddingVertical="@dimen/dp_10"
         android:textColor="@color/pink"
         android:textSize="@dimen/sp_20" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/tvGallery"
-        android:layout_marginStart="-50dp"
-        android:layout_toEndOf="@+id/tvGallery"
-        android:src="@drawable/baseline_photo_album_24" />
     <TextView
         android:id="@+id/tvNotice"
+        android:drawableRight="@drawable/baseline_message_24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvShowAttendance"
@@ -115,13 +94,6 @@
         android:paddingVertical="@dimen/dp_20"
         android:textColor="@color/green"
         android:textSize="@dimen/sp_20" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/tvNotice"
-        android:layout_marginStart="-50dp"
-        android:layout_toEndOf="@+id/tvNotice"
-        android:src="@drawable/baseline_message_24" />
     <TextView
         android:id="@+id/tvPayFees"
         android:layout_width="wrap_content"
@@ -129,18 +101,12 @@
         android:layout_below="@+id/tvGallery"
         android:background="@color/lighter_blue"
         android:text="@string/pay_fees"
-        android:layout_marginTop="@dimen/dp_20"
-        android:paddingHorizontal="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingHorizontal="@dimen/dp_30"
         android:paddingVertical="@dimen/dp_20"
         android:textColor="@color/blue"
-        android:textSize="@dimen/sp_20" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/tvPayFees"
-        android:layout_marginStart="-50dp"
-        android:layout_toEndOf="@+id/tvPayFees"
-        android:src="@drawable/baseline_attach_money_24" />
+        android:textSize="@dimen/sp_20"
+        android:drawableRight="@drawable/baseline_attach_money_24"/>
     <TextView
         android:id="@+id/tvAbout"
         android:layout_width="wrap_content"
@@ -149,7 +115,7 @@
         android:layout_below="@+id/tvNotice"
         android:background="@color/light_orange"
         android:text="@string/about"
-        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
         android:paddingHorizontal="@dimen/dp_50"
         android:paddingVertical="@dimen/dp_20"
         android:textColor="@color/orange"
